@@ -12,25 +12,25 @@ int main(void)
 
 void S0 (int *data)
 {
-	int i,j,k;
+	int number,j,k;
 	srand(time(NULL));
 	printf("¤Q­Ó¶Ã¼Æ:");
-	for (i=0;i<=9;i++)
+	for (number=0;number<=9;number++)
 	{
 		do
 		{
-			data[i]=(rand()%51)+10;
+			data[number]=(rand()%51)+10;
 			k=0;
-			for (j=0;j<i;j++)
+			for (j=0;j<number;j++)
 			{
-				if(data[i]==data[j])
+				if(data[number]==data[j])
 				{
 					k=1;
 					break;
 				}
 			}
 		}while(k==1);
-	    printf(" %d ",data[i]);
+	    printf(" %d ",data[number0]);
 	}
     printf("\n");
 }
